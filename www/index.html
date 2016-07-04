@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ion-Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link ios-href="build/css/app.ios.css" rel="stylesheet">
+  <link md-href="build/css/app.md.css" rel="stylesheet">
+  <link wp-href="build/css/app.wp.css" rel="stylesheet">  
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDLhNc1dIy4Z0l7o03mhnm-LOTK5yRRBNI
+          "></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+
+  <!-- this Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
+  <!-- Polyfill needed for platforms without Promise and Collection support -->
+  <script src="build/js/es6-shim.min.js"></script>
+  <!-- Zone.js and Reflect-metadata  -->
+  <script src="build/js/Reflect.js"></script>
+  <script src="build/js/zone.js"></script>
+  <!-- the bundle which is built from the app's source code -->
+  <script src="build/js/app.bundle.js"></script>
+
+    <ion-nav-view></ion-nav-view>
+  </body>
+
+</html>
