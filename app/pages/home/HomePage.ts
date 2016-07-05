@@ -21,9 +21,13 @@ import {NgRedux} from 'ng2-redux';
   ]
 })
 export class HomePage {
+  response$ : Observable<any>;
+  searchQuery : any = '';
   constructor(private nav: NavController, private ngRedux: NgRedux<any>, private zone: NgZone) { }
    
-  ngOnInit(){
+  ngOnInit() {
   }
-
+  executeQuery() {
+    userActions.logIndex(this.searchQuery);
+  }
 }

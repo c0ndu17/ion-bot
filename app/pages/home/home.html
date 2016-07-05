@@ -1,2 +1,14 @@
+<ion-toolbar>
+    <form (ngSubmit)="executeQuery()">
+      <ion-item>
+        <ion-input [(ngModel)]='searchQuery'></ion-input>
+      </ion-item>
+    </form>
+</ion-toolbar>
 <ion-content>
+  <ion-list>
+    <!-- <ion-item *ngFor="let response of"> -->
+    <!-- </ion-item> -->
+  </ion-list>
+
 </ion-content>

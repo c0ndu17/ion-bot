@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux-immutable';
 
-import user from './user';
+import currentUser from './currentUser';
+import searchHistory from './searchHistory';
 
 const rootReducer = combineReducers({
-  user,
+  currentUser,
+  searchHistory,
 });
 
 export default rootReducer;
